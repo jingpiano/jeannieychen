@@ -1,1 +1,2 @@
 # jeannieychen
+Responsive Portfolio Website
