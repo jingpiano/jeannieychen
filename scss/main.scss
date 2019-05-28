@@ -863,6 +863,14 @@ main {
     text-align: left;
   }
 
+  ul a {
+    text-decoration: underline;
+  }
+
+  ul a:hover {
+    color: #eece1a;
+  }
+
   .publications h3 {
     font-size: 1.8em;
     font-style: normal;
