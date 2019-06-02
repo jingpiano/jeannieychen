@@ -555,6 +555,10 @@ main {
     padding: 0;
   }
 
+  h3 {
+    font-size: 1em;
+  }
+
   i:hover {
     color: #eece1a;
     transition: 0.2s;
@@ -590,12 +594,6 @@ main {
     border: 1px solid #eece1a;
     opacity: 1;
     transition: 0.4s;
-  }
-
-  .nanjing-week-one h3 {
-    font-size: 1.8em;
-    font-style: normal;
-    text-align: left;
   }
 }
 
