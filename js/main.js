@@ -76,13 +76,16 @@ function topFunction() {
 // Slideshow
 
 var slideIndex = 1;
+var timer = null;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+  clearTimeout(timer);
   showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
+  clearTimeout(timer);
   showSlides((slideIndex = n));
 }
 
@@ -90,6 +93,9 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  if (n == undefined) {
+    n = ++slideIndex;
+  }
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -104,4 +110,5 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+  timer = setTimeout(showSlides, 5000);
 }
