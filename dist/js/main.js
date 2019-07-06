@@ -73,7 +73,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Slideshow
+// Slideshow by Month
 
 var slideIndex = 1;
 var timer = null;
@@ -112,3 +112,10 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   timer = setTimeout(showSlides, 5000);
 }
+
+// Flickity Carousel
+var Flickity = require("flickity");
+require("flickity-imagesloaded");
+var flkty = new Flickity(".carousel", {
+  imagesLoaded: true
+});

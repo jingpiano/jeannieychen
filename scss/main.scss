@@ -5,11 +5,34 @@
   box-sizing: border-box;
 }
 
-// Slideshow Styles
+// Flickity Main Carousel
+
+.carousel {
+  background: #000;
+}
+
+.carousel img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel img {
+    height: 400px;
+  }
+}
+
+// Slideshow Styles for Each Month
 
 .mySlides {
   display: none;
 }
+
 img {
   vertical-align: middle;
 }
