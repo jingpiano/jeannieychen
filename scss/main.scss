@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+// Main Gallery ResponsiveSwitch Link
+.responsive-switch {
+  display: inline-block;
+}
+
+.responsive-switch:after {
+  content: attr(data-content);
+}
+
 // Flickity Main Carousel
 
 .carousel {
