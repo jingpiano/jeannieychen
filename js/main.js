@@ -110,7 +110,7 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  timer = setTimeout(showSlides, 5000);
+  timer = setTimeout(showSlides, 10000);
 }
 
 // Flickity Carousel
