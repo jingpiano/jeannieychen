@@ -1076,6 +1076,41 @@ main {
   }
 }
 
+// EAL Program Brochure
+.eal-brochure {
+  .float {
+    position: fixed;
+    width: 40px;
+    height: 45px;
+    bottom: 75px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.6;
+
+    i {
+      padding-top: 13px;
+      font-size: 18px;
+    }
+
+    i:hover {
+      color: #fff;
+      transition: none;
+    }
+  }
+
+  .float:hover {
+    background-color: #232323; /* Add a dark-grey background on hover */
+    border: 1px solid #eece1a;
+    opacity: 1;
+    transition: 0.4s;
+  }
+}
+
 // Curriculum Vitae
 .curriculum-vitae {
   .float {
