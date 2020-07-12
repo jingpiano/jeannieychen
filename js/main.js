@@ -16,7 +16,7 @@ function toggleMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
-    navItems.forEach(item => item.classList.add("show"));
+    navItems.forEach((item) => item.classList.add("show"));
 
     // Set Menu State
     showMenu = true;
@@ -25,7 +25,7 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
-    navItems.forEach(item => item.classList.remove("show"));
+    navItems.forEach((item) => item.classList.remove("show"));
 
     // Set Menu State
     showMenu = false;
@@ -38,7 +38,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
@@ -55,7 +55,7 @@ for (i = 0; i < acc.length; i++) {
 
 // Scroll to Top Button
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -117,5 +117,10 @@ function showSlides(n) {
 var Flickity = require("flickity");
 require("flickity-imagesloaded");
 var flkty = new Flickity(".carousel", {
-  imagesLoaded: true
+  imagesLoaded: true,
+});
+requirejs(["path/to/flickity-imagesloaded"], function (Flickity) {
+  var flkty = new Flickity(".carousel", {
+    imagesLoaded: true,
+  });
 });
