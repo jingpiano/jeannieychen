@@ -1,4 +1,4 @@
 # jeannieychen
 Responsive Portfolio Website
 <br>
-https://jeannieychen.com
+https://jingpiano.github.io/jeannieychen/
